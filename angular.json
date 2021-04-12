@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ngx-authorizenet": {
+      "projectType": "library",
+      "root": "projects/ngx-authorizenet",
+      "sourceRoot": "projects/ngx-authorizenet/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngx-authorizenet/tsconfig.lib.json",
+            "project": "projects/ngx-authorizenet/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-authorizenet/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-authorizenet/src/test.ts",
+            "tsConfig": "projects/ngx-authorizenet/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-authorizenet/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-authorizenet/tsconfig.lib.json",
+              "projects/ngx-authorizenet/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-authorizenet"
 }

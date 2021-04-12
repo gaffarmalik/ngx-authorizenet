@@ -1,0 +1,8 @@
+<form class="my-4" id="paymentForm" method="POST" action="{{urlAction}}">
+    <button class="btn AcceptUI" type="button"
+    attr.data-billingAddressOptions='{{billingAddressOptions}}' attr.data-apiLoginID="{{apiLoginID}}"
+    attr.data-clientKey="{{clientKey}}" attr.data-acceptUIFormBtnTxt="Pay"
+    attr.data-acceptUIFormHeaderTxt="{{acceptUIFormHeaderTxt}}" data-responseHandler="authorizeHandler">
+    {{ButtonText}}
+</button>
+</form>
