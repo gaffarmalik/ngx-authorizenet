@@ -103,10 +103,10 @@ export class YourComponent implements OnInit {
 ## Pull Request and Contributions
 The Project is currently being maintained by only me on [Github](https://github.com/emperor-orbitz/ngx-authorizenet). </br>
 You can create a PR to include more features to this project which currently unavailable such as <br>
-- ServerSide Controller 
+- Server Side Response Handler
 - Unit Testing 
-- Improved Type Hinting.
+- Improved Type Hinting
+- Sample Project and Code
 - And Many More
-
 <br/>
 
